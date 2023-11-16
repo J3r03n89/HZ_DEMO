@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "al",
+          "request": "launch",
+          "name": "DEV-JEROEN",
+          "environmentName": "Dev-Jeroen",
+          "authentication": "AAD",
+          "startupObjectId": 50100,
+          "startupObjectType": "Page",
+          "schemaUpdateMode": "Synchronize",
+          "breakOnError": true,
+          "breakOnRecordWrite":true,
+          "launchBrowser": true,
+          "enableLongRunningSqlStatements": true,
+          "enableSqlInformationDebugger": true
+        }
+    ]
+}
