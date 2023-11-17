@@ -1,6 +1,8 @@
 table 50102 BeerIngredients
 {
     DataClassification = ToBeClassified;
+    DrillDownPageId = BeerIngredients;
+    LookupPageId = BeerIngredients;
 
     fields
     {
