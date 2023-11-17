@@ -15,6 +15,8 @@ page 50100 BeerList
 
                 field(Nummer; Rec.ID)
                 {
+
+
                 }
                 field(Omschrijving; Rec.Name)
                 {
@@ -33,7 +35,33 @@ page 50100 BeerList
                 field("Ingredients"; rec.Ingredients)
                 {
 
+
+
                 }
+            }
+        }
+    }
+    actions
+    {
+        area(Promoted)
+        {
+
+            actionref(Detail; Details)
+            {
+
+            }
+
+
+        }
+
+        area(Creation)
+        {
+            action(Details)
+            {
+                Image = ViewDetails;
+                RunObject = Page "Beer Card";
+                RunPageLink = ID = field(ID);
+
             }
         }
     }
