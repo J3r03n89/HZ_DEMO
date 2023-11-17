@@ -20,8 +20,16 @@ page 50102 BeerIngredients
                 {
 
                 }
+                field("Beer name"; rec."Beer name")
+                {
+
+                }
                 field(Ingredient; Rec.Ingredient)
                 {
+                }
+                field("Ingredient name"; rec."Ingredient name")
+                {
+
                 }
             }
         }

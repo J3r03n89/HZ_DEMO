@@ -1,7 +1,8 @@
 table 50100 Beer
 {
     DataClassification = ToBeClassified;
-
+    DrillDownPageId = "Beer Card";
+    LookupPageId = BeerList;
     fields
     {
         field(1; ID; Integer)
@@ -36,7 +37,10 @@ table 50100 Beer
 
         field(80; Ingredients; Integer)
         {
-            TableRelation = Ingredients.ID;
+            Editable = false;
+            FieldClass = FlowField;
+            CalcFormula = count(BeerIngredients where(Beer = field(ID)));
+
         }
 
     }
